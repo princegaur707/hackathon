@@ -1,12 +1,14 @@
 {% extends 'index.html' %}
-{% block title %}List{% endblock %}
+{% block title %}Page Not Found{% endblock %}
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 1rem;">
     <div class="row">
-        <div class="col-md-6" style="margin: 0 auto;text-align:center">
-            <img src="/static/404.jpg" class="img-fluid">
-            <a href="{% url "index" %}" style="margin:0rem auto 5rem auto;" class="btn btn-primary">Go Back Home</a>
+        <div class="col-md-6" style="margin: 0 auto;">
+            <img src="/static/error.jpg" class="img-fluid">     
         </div>
+    </div>
+    <div class="row" style="margin-bottom: 1rem;">
+        <a href="{% url 'index' %}" class="btn btn-primary" style="margin: 0 auto;display: block;">Home</a>
     </div>
 </div>
 {% endblock %}
