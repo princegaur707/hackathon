@@ -223,6 +223,16 @@ def geturlhistory(request):
     except:
         return render(request,'404.html')
 
+def discuss(request):
+    try:
+        mydict = {
+            "users" : UserFeedBack.objects.all()
+        }
+        return render(request,'discuss.html',context=mydict)
+    except:
+        return render(request,'404.html')
+
+
 
 
 			

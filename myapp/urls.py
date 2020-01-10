@@ -7,5 +7,6 @@ urlpatterns = [
     path('saveuserfeedbackform',views.saveuserfeedbackform,name="saveuserfeedbackform"),
     path('result',views.result,name='result'),
     path('about',views.about,name='about'),
-    path('geturlhistory',views.geturlhistory,name="geturlhistory")
+    path('geturlhistory',views.geturlhistory,name="geturlhistory"),
+    path('discuss',views.discuss,name="discuss")
 ]
