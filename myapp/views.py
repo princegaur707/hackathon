@@ -206,7 +206,7 @@ def result(request):
     obj.save()
     return render(request, 'result.html',
                   {'result': 'Real-time analysis successfull',
-                  'f2': te, 'mal': mal})
+                  'f2': te, 'mal': mal,'text':text})
 
 
 def about(request):
