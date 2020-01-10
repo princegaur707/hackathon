@@ -145,4 +145,13 @@ def result(request):
     return render(request,'result.html',{'result':'Real-time analysis successfull','f2':te})
 
 def about(request):
-    return render(request,'about.html')    
+    try:
+        return render(request,'about.html')
+    except:
+        return render(request,'404.html') 
+
+def geturlhistory(request):
+    try:
+        return render(request,'list.html')
+    except:
+        return render(request,'404.html') 

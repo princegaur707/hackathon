@@ -214,6 +214,15 @@ def about(request):
     except:
         return render(request,'404.html')
 
+def geturlhistory(request):
+    try:
+        mydict = {
+            "urls" : Url.objects.all()
+        }
+        return render(request,'list.html',context=mydict)
+    except:
+        return render(request,'404.html')
+
 
 
 			
