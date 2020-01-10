@@ -5,15 +5,16 @@ from .models import UserFeedBack
 
 def index(request):
 	try:
-    	return render(request,'index.html')
-    except:
+		return render(request,'index.html')
+	except:
 		return render(request,'404.html')
+
 
 
 def getuserfeedbackform(request):
 	try:
 		return render(request,'userfeedbackform.html')
-	except
+	except:
 		return render(request,'404.html')
 		
 
