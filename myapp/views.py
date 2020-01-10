@@ -200,6 +200,10 @@ def result(request):
         mal = True
     else:
         mal = False
+    obj = Url()
+    obj.link = text
+    obj.result = te 
+    obj.save()
     return render(request, 'result.html',
                   {'result': 'Real-time analysis successfull',
                   'f2': te, 'mal': mal})

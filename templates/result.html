@@ -3,16 +3,15 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6" style="margin: 0 auto;">
-            {% if {{mal}}==True %}
+        <div class="col-md-6" style="margin: 1rem auto 0 auto;">
+            {% if mal %}
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Legitimate Url</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            {% endif %}
-            {% if {{mal}}==False %}
+            {% else %}
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Legitimate Url</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
