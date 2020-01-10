@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block title %}Result Page{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto;">
+            {% if {{mal}}==True %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Legitimate Url</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endif %}
+            {% if {{mal}}==False %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Legitimate Url</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

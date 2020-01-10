@@ -35,15 +35,15 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <a class="nav-link" href="{% url "index" %}">Home
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Smart India Hackathon</a>
       </li>
     </ul>
     <!-- Links -->
@@ -53,6 +53,54 @@
 </nav>
 <!--/.Navbar-->
     {% block content %}
+    <form  action="{%  url 'result'  %}" autocomplete="off">
+      <div class="container-fluid" style="margin-top: 1rem;" >
+          <div class="row">
+              <div class="col-md-12">
+                  <!-- Section -->
+                  <section>
+  
+                      <i class="fad fa-sack-dollar"
+                          style="margin:0 auto;display: block;text-align: center;font-size: 6rem;color:red"></i>
+  
+                      <!--First row-->
+                      <div class="row d-flex justify-content-center">
+  
+  
+                          <div class="col-md-12 col-lg-12 mb-4">
+  
+                              <!-- Material outline input -->
+                              <div class="md-form md-outline form-lg">
+                                  <input type="text" name="url" class="form-control form-control-lg" name="url">
+                                  <label for="text">Enter Suspected Url : </label>
+                              </div>
+  
+                          </div>
+  
+                         <div class="col-md-12 col-lg-12 mb-4">
+  
+                              <button type="submit" class="btn btn-danger" style="display: block;margin: 0 auto;">Real Time Analysis</button>
+  
+                          </div>
+  
+                      </div>
+                      <!--First row-->
+  
+                  </section>
+                  <!-- Section -->
+              </div>
+          </form>
+          </div>
+          <div class="row">
+  
+              <div class="col-md-6" >
+                  <img src="/static/img1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <img src="/static/img2.jpg" class="img-fluid">
+              </div>
+            
+      </div>
     
     {% endblock %}
     <div class="container-fluid">
