@@ -10,3 +10,4 @@ urlpatterns = [
     path('geturlhistory',views.geturlhistory,name="geturlhistory"),
     path('discuss',views.discuss,name="discuss")
 ]
+

@@ -4,6 +4,7 @@ from django.db import models
 class UserFeedBack(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
+    reply = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
 class Url(models.Model):
